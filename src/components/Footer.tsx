@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Mail, Linkedin, Twitter } from 'lucide-react';
+import logo from '../logo/logo.jpg'; // Correct import
 
 const Footer = () => {
   return (
@@ -11,8 +12,8 @@ const Footer = () => {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                  src="/src/logo/logo.jpg" 
-                  alt="Seris Tech Logo" 
+                  src={logo}
+                  alt="Seris Tech Logo"
                   className="w-8 h-8 rounded-lg object-cover"
                 />
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
@@ -35,7 +36,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
             {/* Quick Links */}
             <div>
               <h4 className="text-white font-semibold mb-4">Quick Links</h4>
@@ -86,7 +86,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
             {/* Products */}
             <div>
               <h4 className="text-white font-semibold mb-4">Solutions</h4>
@@ -98,7 +97,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
           {/* Bottom Bar */}
           <div className="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
