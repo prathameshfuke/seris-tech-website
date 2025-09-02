@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Linkedin } from 'lucide-react';
+import logo from '../logo/logo.jpg'; // Correct import for your logo
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,8 +31,8 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/src/logo/logo.jpg" 
-              alt="Seris Tech Logo" 
+              src={logo}
+              alt="Seris Tech Logo"
               className="w-10 h-10 rounded-lg object-cover"
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
