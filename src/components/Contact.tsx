@@ -43,7 +43,6 @@ const Contact = () => {
               Ready to revolutionize healthcare with AI? Let's discuss how our solutions can transform your community's health outcomes.
             </p>
           </div>
-
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
@@ -54,7 +53,6 @@ const Contact = () => {
                   to implement AI-driven solutions that save lives and improve health outcomes.
                 </p>
               </div>
-
               <div className="space-y-6">
                 <div className="flex items-center space-x-4 p-4 bg-slate-700/30 rounded-lg border border-slate-600/30">
                   <Mail className="w-6 h-6 text-cyan-400" />
@@ -64,16 +62,14 @@ const Contact = () => {
                     <p className="text-sm text-gray-400">Co-Founder</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4 p-4 bg-slate-700/30 rounded-lg border border-slate-600/30">
                   <MapPin className="w-6 h-6 text-emerald-400" />
                   <div>
-                    <p className="text-white font-medium">Headquarters</p>
-                    <p className="text-gray-300">Innovation Hub</p>
-                    <p className="text-sm text-gray-400">Healthcare Technology District</p>
+                    <p className="text-white font-medium">Location</p>
+                    <p className="text-gray-300">Pune, India</p>
+                    <p className="text-sm text-gray-400">We operate from Pune.</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4 p-4 bg-slate-700/30 rounded-lg border border-slate-600/30">
                   <Phone className="w-6 h-6 text-cyan-400" />
                   <div>
@@ -84,7 +80,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-slate-700/30 to-slate-800/30 p-8 rounded-xl border border-slate-600/30 backdrop-blur-sm">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -105,7 +100,6 @@ const Contact = () => {
                     placeholder="Your full name"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address *
@@ -123,7 +117,6 @@ const Contact = () => {
                     placeholder="your.email@example.com"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
                     Organization/Company
@@ -140,7 +133,6 @@ const Contact = () => {
                     placeholder="Your organization"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message *
@@ -158,7 +150,6 @@ const Contact = () => {
                     placeholder="Tell us about your healthcare technology needs..."
                   ></textarea>
                 </div>
-
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -179,7 +170,6 @@ const Contact = () => {
                     </>
                   )}
                 </button>
-
                 {/* Success/Error Messages */}
                 {submitStatus === 'success' && (
                   <div className="flex items-center space-x-2 text-emerald-400 bg-emerald-400/10 p-4 rounded-lg border border-emerald-400/20">
@@ -187,7 +177,6 @@ const Contact = () => {
                     <span>Message sent successfully! We'll get back to you within 24 hours.</span>
                   </div>
                 )}
-
                 {submitStatus === 'error' && (
                   <div className="flex items-center space-x-2 text-red-400 bg-red-400/10 p-4 rounded-lg border border-red-400/20">
                     <AlertCircle className="w-5 h-5" />
